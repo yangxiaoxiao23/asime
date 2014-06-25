@@ -5,7 +5,7 @@
 .toolbar {height:30px;line-height:30px; background:#e6e6e6;/*border-bottom:1px solid #e2e2e2;background:url(../images/nav_bg.jpg) repeat-x;*/}
 .toolbar .toolbar-bd {width:1000px;height:30px;line-height:30px;margin:0 auto;}
 
-.header-bd .asemi-info-bd , .asemi-feature-bd, .coll-case-bd , .honour-bd, .footer-bd{width:1000px;margin:0 auto;}
+.header-bd .asemi-info-bd , .asemi-feature-bd, .coll-case-bd , .honour-bd, .footer-bd, .walk-asemi .walk-asemi-bd{width:1000px;margin:0 auto;}
 
 .wrap {}
 
@@ -187,20 +187,34 @@ height: 27px;line-height: 27px;overflow: hidden; white-space: nowrap;}
 .content-bd .honour {background:#f0f0f0;}
 .content-bd .honour-bd {padding:15px 0;}
 
-.content-bd .honour-bd .sec-bd {padding:20px 0;}
-.content-bd .honour-bd .sec-bd .back, .content-bd .honour-bd .sec-bd .forward {width:30px;height: 200px;line-height: 200px;}
-.content-bd .honour-bd .sec-bd .back span, .content-bd .honour-bd .sec-bd .forward span {display:inline-block;_display:inline;_zoom:1;width:30px;height: 35px;cursor: pointer;
-}
-.content-bd .honour-bd .sec-bd .back span {background: url(../images/honour/slide-back.png) no-repeat;}
-.content-bd .honour-bd .sec-bd .forward span {background: url(../images/honour/slide-forward.png) no-repeat;}
-.content-bd .honour-bd .sec-bd .honour-ul {height: 200px;width:895px}
-.content-bd .honour-bd .sec-bd .honour-li {float:left;width:20%;text-align: center;}
+.content-bd .honour-bd .sec-bd {padding:20px 0 0;height:232px;}
+.content-bd .honour-bd .sec-bd .back , .content-bd .honour-bd .sec-bd .forward {display:inline-block;_display:inline;_zoom:1;width:30px;height:35px;cursor: pointer;}
+
+.content-bd .honour-bd .sec-bd .back {background: url(../images/honour/slide-back.png) no-repeat;}
+.content-bd .honour-bd .sec-bd .forward {background: url(../images/honour/slide-forward.png) no-repeat;}
+
+.content-bd .honour-bd .sec-bd .roll {position:relative;height:228px;width:885px;overflow:hidden;display:inline-block;_display:inline;_zoom:1;margin:0 5px;vertical-align:middle;}
+.content-bd .honour-bd .sec-bd .honour-ul {position:absolute;}
+.content-bd .honour-bd .sec-bd .honour-li {float:left;width:177px;height:228px;text-align: center;}
 .content-bd .honour-bd .sec-bd .honour-li div {}
 .content-bd .honour-bd .sec-bd .honour-li div img {}
 .content-bd .honour-bd .sec-bd .honour-li p {padding: 20px 0;color: #333;font-size: 12px;font-family: '宋体';overflow: hidden;}
 
-
 .content-bd .walk-asemi{background:#fff;height:333px;}
+.content-bd .walk-asemi .walk-asemi-bd {padding-top:20px;height:293px;background: url(../images/about-bg.png) no-repeat;}
+.walk-asemi-bd .video-wrap {width:284px;}
+.walk-asemi-bd .video-wrap .title { background: url(../images/about-title-bg.png) no-repeat;}
+.walk-asemi-bd .video-wrap .video-bd {}
+
+.walk-asemi-bd .about-asemi {}
+.walk-asemi-bd .about-asemi .title {}
+.walk-asemi-bd .about-asemi .text {}
+.walk-asemi-bd .about-asemi .detail {}
+
+.walk-asemi-bd .team-show {}
+.walk-asemi-bd .team-show .title {}
+.walk-asemi-bd .team-show .pic {}
+
 .content-bd .beltline{background:#fff;height:318px;}
 .content-bd .asemi-news {background:#d9d9da;height:380px;}
 
