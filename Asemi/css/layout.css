@@ -1,8 +1,0 @@
-@charset "utf-8";
-/* CSS Document */
-
-/*layout*/
-.toolbar {height:30px;line-height:30px; background:#e6e6e6;/*border-bottom:1px solid #e2e2e2;background:url(../images/nav_bg.jpg) repeat-x;*/}
-.toolbar .toolbar-bd {width:1000px;height:30px;line-height:30px;margin:0 auto;}
-
-.header-bd .asemi-info-bd , .asemi-feature-bd, .coll-case-bd, .walk-asemi .walk-asemi-bd, .asemi-news .asemi-news-bd, .honour-bd, .beltline .beltline-bd, .footer-bd{width:1000px;margin:0 auto;}
