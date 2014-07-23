@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*  工具栏样式 */
+.toolbar .toolbar-bd .welcome, .toolbar .toolbar-bd .toolbar-bd-con li a{float:left;color:#999999;font-size:12px;font-family:'宋体';}
+.toolbar .toolbar-bd .welcome em {color:#916119;}
+.toolbar .toolbar-bd .toolbar-bd-con {float:right;}
+.toolbar .toolbar-bd .toolbar-bd-con li {float:right;padding:0 5px;}
+.toolbar .toolbar-bd .toolbar-bd-con li a {text-decoration:none;}
+.toolbar .toolbar-bd .toolbar-bd-con li a:hover{color:#916119;}
+
+/* 头部样式 */
+.header-bd .asemi-info {height:116px;background:#f0f0f0;}
+.header-bd .asemi-info-bd { background:url(../images/head-bg.jpg) no-repeat;height:115px;box-shadow:0 0 8px #d5d5d5;}
+
+.header-bd .nav {height:38px;line-height:38px; background: url(../images/nav_bg.jpg) repeat-x;}
+.header-bd .nav-bd {width:1000px;margin:0 auto;}
+.header-bd .nav-bd .nav-ul {height:38px;}
+.header-bd .nav-bd .nav-ul .nav-li {height:38px;line-height:38px;color:#fff;float:left;}
+
+.header-bd .nav-bd .nav-ul .nav-li a {display:inline-block;_display:inline;_zoom:1;height:38px;padding:0 20px;color:#fff;font-size:14px; text-decoration:none;font-family:"\5FAE\8F6F\96C5\9ED1",Arial; background:url(../images/nav-split.jpg) no-repeat right center;}
+.header-bd .nav-bd .nav-ul .active a {background:url(../images/nav-active.jpg) no-repeat right center;}
+.header-bd .nav-bd .nav-ul .nav-li a.nosplit {background:url(../images/nav-active.jpg) repeat-x 0 -100px;}
+.header-bd .nav-bd .nav-ul .active, .header-bd .nav-bd .nav-ul .nav-li:hover, .header-bd .nav-bd .nav-ul .nav-li a:hover {background:url(../images/nav-active.jpg) repeat-x;}
+.header-bd .nav-bd .nav-ul .nav-li a.nosplit:hover {background:url(../images/nav-active.jpg) repeat-x;}
+
+
+.header-bd .slider {height:340px; background:#f0f0f0;}
+.header-bd .slide-bd {width:100%;margin:0 auto;position:relative;}
+.header-bd .slide-bd, .header-bd .slide-bd .slide-ul {height:100%;overflow:hidden;}
+.header-bd .slide-bd .slide-ul {width:4800px;position: relative;}
+.header-bd .slide-bd .slide-li {float:left;width:1600px;height:341px;}
+.header-bd .slide-bd .slide-li img {width:1600px;height:341px;}
+
+.header-bd .slide-bd .slide-flag {position:absolute;left:1170px;bottom:10px;height:16px;line-height:16px;overflow:hidden;}
+.header-bd .slide-bd .slide-flag dd {display:inline-block;_display:inline;_zoom:1;height:16px;width:16px;margin-right:4px;color:#fff; background:#2f4d95;text-align:center;cursor:pointer;}
+.header-bd .slide-bd .slide-flag dd.active {background:#9c681c;}

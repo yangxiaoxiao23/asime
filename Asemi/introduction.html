@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Asemi</title>
+
+<link type="text/css" rel="stylesheet" href="css/public_reset.css">
+<link type="text/css" rel="stylesheet" href="css/layout.css">
+<link type="text/css" rel="stylesheet" href="css/header.css">
+<link type="text/css" rel="stylesheet" href="css/introduction.css">
+<link type="text/css" rel="stylesheet" href="css/footer.css">
+
+<!--引入Jq-->
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/seajs/sea.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/AddFavorite.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+    window.onload = function(){
+        DD_belatedPNG.fix(".pngFix,.pngFix:hover");
+    }
+</script>
+<![endif]-->
+</head>
+<body>
+<div class="toolbar">
+	<div class="toolbar-bd">
+		<div class="welcome">您好，欢迎来到<em>强元芯电子</em>！</div>	
+    	<ul class="toolbar-bd-con">
+        	<li><a href="#">网站地图</a></li>
+            <li><a href="#">|</a></li>
+            <li><a href="#" onclick="addFavorite('强元芯', 'http://www.asemi.com')">收藏本站</a></li>
+        </ul>
+	</div>	
+</div>
+<div id="J_Wrap" class="wrap">
+
+	<div class="header">
+    	<div class="header-bd">
+        	<div class="asemi-info">
+            	<div class="asemi-info-bd">
+                </div>	
+            </div>
+            
+            <div class="nav">
+            	<div class="nav-bd">
+                	<ul class="nav-ul">
+                    	<li class="nav-li"><a href="#" title="首页">首页</a></li>
+                        <li class="nav-li"><a href="#" title="整流桥堆">整流桥堆</a></li>
+                        <li class="nav-li"><a href="#" title="肖特基二极管">肖特基二极管</a></li>
+                        <li class="nav-li"><a href="#" title="快恢复二极管">快恢复二极管</a></li>
+                        <li class="nav-li"><a href="#" title="电源板配套">电源板配套</a></li>
+                        <li class="nav-li active"><a href="#" title="规格书下载">规格书下载</a></li>
+                        <li class="nav-li"><a href="#" title="客户案例">客户案例</a></li>
+                        <li class="nav-li"><a href="#" title="关于强元芯">关于强元芯</a></li>
+                        <li class="nav-li"><a href="#" class="nosplit" title="联系强元芯">联系强元芯</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <div class="content">
+		<div class="content-bd">
+        	
+            <!-- 搜索 -->
+        	<div class="search-wrap">
+            	<div class="search-wrap-bd">
+                	<div class="search-key">
+                    	<div class="key-text">搜索关键字：</div>
+                        <ul class="key-ul">
+                        	<li class="key-li"><a href="#" title="桥堆">桥堆</a></li>
+                            <li class="key-li"><a href="#" title="整流桥">整流桥</a></li>
+                            <li class="key-li"><a href="#" title="桥堆">肖特基二极管</a></li>
+                            <li class="key-li"><a href="#" title="桥堆">快恢复二极管</a></li>
+                            <li class="key-li"><a href="#" title="桥堆">MOS管</a></li>
+                            <li class="key-li"><a href="#" title="桥堆">三极管</a></li>
+                            <li class="key-li"><a href="#" title="桥堆">整流模块</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="search">
+                    	<form action="" method="post" id="search-form">
+	                    	<div class="sea-inp">
+                            	<div class="sea-inp-midd pngFix"><input type="text" placeholder="输入商品进行搜索"/></div>
+                            </div>
+    	                    <div class="sea-btn">
+                            	<!--
+                            	<div class="sea-btn-left">
+                                    <div class="sea-btn-right">
+                                        <div class="sea-btn-midd"><button type="submit">搜索</button></div>
+                                    </div>
+                                </div>-->
+                                <button type="submit" id="query">搜索</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="adv-wrap">
+            	<div class="adv-wrap-bd">
+                	<img src="images/adv/adv4.png" class="adv-bd"/>
+                    <a href="javascript:void(0);" class="adv-btn"><img src="images/adv/go-consult-go.png"/></a>
+                </div>
+            </div>
+            
+            <!-- 产品展示区域 -->
+            <div class="pro-area">
+            	<div class="pro-area-bd clear">
+                	<div class="fl">
+                    	<div class="menu">
+                            <div class="menu-bd">
+                                <div class="title-left pngFix">
+                                    <div class="title-right pngFix">
+                                        <div class="title-bd"><p class="pro-title pngFix">关于强元芯</p></div>
+                                    </div>
+                                </div>
+                                
+                                <dl class="category-dl">
+                                    <dd class="category-dd"><a href="introduction.html"  class="active pngFix">关于强元芯</a></dd>
+                                    <dd class="category-dd"><a href="teamshow.html" class="pngFix">团队展示</a></dd>
+                                    <dd class="category-dd"><a href="honor.html" class="pngFix">荣誉证书</a></dd>
+                                    <dd class="category-dd"><a href="contact-asemi.html" class="pngFix">联系强元芯</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-asime">
+                        	<h3>推荐产品</h3>
+                            <ul class="pro-desc-ul clear">
+                                <li class="pro-desc-li">
+                                    <div class="pro-det">
+                                        <div class="pro-img"><a href="#"><img src="images/products/MR756.jpg" alt="MR756整流桥堆"/></a></div>
+                                        <h4><a href="#">MR756整流桥堆</a></h4>
+                                    </div>                                	
+                                </li>
+                                
+                                <li class="pro-desc-li">
+                                    <div class="pro-det">
+                                        <div class="pro-img"><a href="#"><img src="images/products/MR756.jpg" alt="MR756整流桥堆"/></a></div>
+                                        <div class="desc-bd">
+                                            <h4><a href="#">MR756整流桥堆</a></h4>
+                                        </div>
+                                    </div>                                	
+                                </li>
+                                
+                                <li class="pro-desc-li">
+                                    <div class="pro-det">
+                                        <div class="pro-img"><a href="#"><img src="images/products/MR756.jpg" alt="MR756整流桥堆"/></a></div>
+                                        <div class="desc-bd">
+                                            <h4><a href="#">MR756整流桥堆</a></h4>
+                                        </div>
+                                    </div>                                	
+                                </li>
+                            </ul>
+                        </div>
+                    	
+                        <div class="contact-asime">
+                        	<h3>联系强元芯</h3>
+                            <dl>
+                            	<dt>
+                                	<p>全国服务热线电话</p>
+                                    <span>400-9929-667</span>
+                                </dt>
+                            	<dd>深圳市强元芯电子有限公司</dd>
+                                <dd>展销地址：深圳市福田区振中路新亚洲电子商城1A009</dd>
+                                <dd>公司地址：深圳市福田区振华路鼎诚国际大厦1505</dd>
+                                <dd>市场部电话：0755-82812525</dd>
+                                <dd>销售一部：0755-66883103</dd>
+                                <dd>销售一部：0755-66883105</dd>
+                                <dd>销售一部：0755-66883108</dd>
+                                <dd>传真：0755-66883107</dd>
+                                <dd>24小时值班电话：13632557728</dd>
+                                <dd>邮箱：sales@asemi88.com</dd>
+                            </dl>
+                        </div>
+                    </div>
+                	
+                    
+                    <div class="view fl">
+                    	<div class="more-pro">
+                        	<p>您现在的位置：<a href="index.html">首页</a>&nbsp;&gt;&nbsp;<span>关于强元芯</span></p>
+                        </div>
+                        <div class="pro-list-wrap">
+
+                            <div class="introduction-wrap">
+                                <div class="introduction-desc">
+                                    <img src="images/introduction-img.png"/>
+                                    <div class="conte"><p>强元芯是一家集科研、开发，制造、销售为一体的高新技术企业。12年专
+                                    注于整流桥及肖特基二极管的研发与生产，致力于半导体行业，专注电源领域，
+                                    我们始终秉持“产品精益求精”、“满足并超越客户需求”的经营理念，为客
+                                    户提供全方位的服务；公司生产的全系列整流桥及肖特基二极管均通过美国
+                                    UL论证，及符合RoSH环保要求，其中整流桥系列产品70%出口台湾地区，肖特
+                                    基二极管已被国内知名企业海信及康佳采用，品质保证。整流桥和肖特基二极
+                                    管广泛应用于开关电源、LED照明、DVD、集成电路、移动通讯、计算机、工业
+                                    自动化控制设备、汽车电子以及液晶电视、电磁炉等大小家电。</p>
+                                    <p>公司拥有一支高素质、高学历的专业人才团队，其中电子、机械、工程管理各类专业工程师及高级管理人才27人，他们将自己研发的20多项专利技术应用于二三极管、桥式整流器和硅晶片生产线中取得良好效果。技术力量雄厚，可协同用户研发、设计新产品，并可提供现场指导。目前，我们的产品营销全国各地，并远销欧美、中东、东南亚等国家和地区，特别是公司自主品片ASEMI在行业内有非常良好的口碑。</p>
+                                    <p>“诚信”是强元芯屹立于行业之本，未来，我们仍将恪守“诚信，专业，务实”的服务理念，不断完善创新，努力为客户和公司同仁共创双嬴。</p></div>
+
+                                </div>
+                                <div class="introduction-text">
+                                    <p>企业文化</p>
+                                    <p>人才理念：品德为先，团队协作，共铸辉煌</p>
+                                    <p>企业愿景：长足发展，引领行业规范；打造中国电子行业标杆。</p>
+                                    <p>企业使命：携手客户，成就国际梦想。</p>
+                                    <p>企业作风：迅速反应，马上行动。</p>
+                                    <p>企业文化：诚信敬业，专业执着，精益求精。</p>
+                                    <p>我们的状态：阳光帅气，快乐奋斗。</p>
+                                    <p>我们的客户观：征服平凡，挑战无限，满足并超越客户需求。</p>
+                                </div>
+                            </div>
+                            
+
+                            
+                            <div class="recommend-news">
+                            	<div class="sec-title">
+                                    <span class="fl">推荐资讯</span>
+                                </div>
+                            	<dl class="news-items clear">
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                    <dd class="news-item pngFix"><a href="#">强元芯4月20日乔迁之喜</a><em>2014-04-25</em></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+    	<div class="footer-bd">
+        	<div class="contact-links clear">
+            	<div class="contact-us fl">
+                	<h4>强元芯联系方式<em>CONTACT US</em></h4>
+                    <h5>全国订购及服务热线：400-9929-667</h5>
+                    <p>深圳市强元芯电子有限公司</p>
+                    <p>展销地址：深圳市福田区振中路新亚洲电子商城1A009</p>
+                    <p>公司地址：深圳市福田区振华路鼎诚国际大厦1505</p>
+                    <p><span>市场部电话：0755-82812525</span>    <span>销售一部：0755-66883103</span></p>
+                    <p><span>销售一部：0755-66883105</span>    <span>  销售一部：0755-66883108</span></p>
+                    <p>传真：0755-66883107</p>
+                    <p>24小时值班电话：13632557728</p>
+                    <p>400电话：400-9929-667</p>
+                    <p>邮箱：sales@asemi88.com</p>
+                </div>
+                <div class="links fl">
+                	<h4>友情链接<em>LINK</em></h4>
+                	<p class="split"></p>
+                	<dl>
+                    	<dd><a href="" target="_blank">环球贸易网</a></dd>
+                        <dd><a href="" target="_blank">网上轻纺城</a></dd>
+                        <dd><a href="" target="_blank">酒水招商网</a></dd>
+                        <dd><a href="" target="_blank">B2B电子商务导航</a></dd>
+                        <dd><a href="" target="_blank">中国机械设备网</a></dd>
+                        <dd><a href="" target="_blank">B2B电子商务网站</a></dd>
+                        <dd><a href="" target="_blank">书生商务网</a></dd>
+                        <dd><a href="" target="_blank">机电在线物通网</a></dd>
+                        <dd><a href="" target="_blank">中国食品机械设备网</a></dd>
+                        <dd><a href="" target="_blank">中国设备网</a></dd>
+                        <dd><a href="" target="_blank">八方资源网</a></dd>
+                        <dd><a href="" target="_blank">乐白供采购万国企业网</a></dd>
+                        <dd><a href="" target="_blank">几点在线物通网中国</a></dd>
+                        <dd><a href="" target="_blank">环球贸易网</a></dd>
+                        <dd><a href="" target="_blank">网上轻纺城</a></dd>
+                        <dd><a href="" target="_blank">酒水招商网</a></dd>
+                        <dd><a href="" target="_blank">B2B电子商务导航</a></dd>
+                        <dd><a href="" target="_blank">中国机械设备网</a></dd>
+                        <dd><a href="" target="_blank">B2B电子商务网站</a></dd>
+                        <dd><a href="" target="_blank">书生商务网</a></dd>
+                        <dd><a href="" target="_blank">机电在线物通网</a></dd>
+                        <dd><a href="" target="_blank">中国食品机械设备网</a></dd>
+                        <dd><a href="" target="_blank">中国设备网</a></dd>
+                        <dd><a href="" target="_blank">八方资源网</a></dd>
+                        <dd><a href="" target="_blank">乐白供采购万国企业网</a></dd>
+                        <dd><a href="" target="_blank">几点在线物通网中国</a></dd>
+                    </dl>
+                </div>
+            </div>
+        	
+            <div class="nav">
+                <p>
+					<a href="#" target="_blank">关于强元芯</a>
+                    <a href="#" target="_blank">整流桥堆</a>
+                    <a href="#" target="_blank">肖特基二极管</a>
+                    <a href="#" target="_blank">快恢复二极管</a>
+                    <a href="#" target="_blank">电源配套</a>
+                    <a href="#" target="_blank">网站地图</a>
+                    <a href="#" target="_blank">联系强元芯</a>
+                </p>
+            </div>
+            <div class="copyRight"><span>深圳市强元芯电子有限公司©版权所有</span><em>备案号：粤ICP备14011825号-2</em></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
