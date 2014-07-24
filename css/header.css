@@ -29,8 +29,8 @@
 .header-bd .slider {height:340px; background:#f0f0f0;}
 .header-bd .slide-bd {width:100%;margin:0 auto;position:relative;}
 .header-bd .slide-bd, .header-bd .slide-bd .slide-ul {height:100%;overflow:hidden;}
-.header-bd .slide-bd .slide-ul {width:4800px;position: relative;}
-.header-bd .slide-bd .slide-li {float:left;width:1600px;height:341px;}
+.header-bd .slide-bd .slide-ul {position: relative;height:341px;overflow:hidden;}
+.header-bd .slide-bd .slide-li {width:1600px;height:341px;}
 .header-bd .slide-bd .slide-li img {width:1600px;height:341px;}
 
 .header-bd .slide-bd .slide-flag {position:absolute;left:1170px;bottom:10px;height:16px;line-height:16px;overflow:hidden;}
