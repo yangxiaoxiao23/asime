@@ -8,3 +8,8 @@ body {height: 100%;min-width: 1002px;}
 .toolbar .toolbar-bd {width:1000px;height:30px;line-height:30px;margin:0 auto;}
 
 .header-bd .asemi-info-bd , .asemi-feature-bd, .coll-case-bd, .walk-asemi .walk-asemi-bd, .asemi-news .asemi-news-bd, .honour-bd, .beltline .beltline-bd, .footer-bd{width:1000px;margin:0 auto;}
+
+.returnTop {display:none;position:fixed;right:20px;bottom:50px;width:41px;height:149px;border:1px solid #0b458e;}
+.returnTop .returnTop-bd {height:100%;background:url(../images/return-top-bg.png) no-repeat;text-align:center;}
+.returnTop .returnTop-bd a {width:18px;padding:18px 0 0px 11px;_padding-left:0;display:block;text-align:center;font:18px/18px '微软雅黑';color:#fff;}
+.returnTop .returnTop-bd a:hover {text-decoration:none;}
