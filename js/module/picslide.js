@@ -2,13 +2,20 @@
 define(function(require, exports, module){
 	
 	function picSlide(oUl, oLi, oBtnWrap){
-		
 		initBtn(oLi, oBtnWrap);
 		
-		var disLeft = Math.ceil(($('.slide-bd').width() - 1600) / 2);
-        oUl.css({left: disLeft});
-
-        oBtnWrap.css({left: (1000 + Math.ceil(($('.slide-bd').width() - 1000) / 2) - oBtnWrap.outerWidth())});
+		var originLiWidth = oLi.width(); //Li原始的宽度
+		var pageMinWidth = $('body').css('min-width') || 1002; //页面的最小宽度
+		pageMinWidth = parseInt(pageMinWidth);
+		var DISRIGHTWIDTH = 50; //切换小图标距离页面主体的右边距
+		var oBtnWrapWidth = oBtnWrap.children().eq(0).outerWidth(true) * oBtnWrap.children().length;
+		
+		
+		updatePosition(oUl, oLi, oBtnWrap, pageMinWidth, originLiWidth, oBtnWrapWidth, DISRIGHTWIDTH);
+		
+		$(window).resize(function(){
+			updatePosition(oUl, oLi, oBtnWrap, pageMinWidth, originLiWidth, oBtnWrapWidth, DISRIGHTWIDTH);
+		});
 		
 		var fun = function(){
 			var oVisiLi = oUl.find('li:visible');//显示的Li
@@ -38,6 +45,25 @@ define(function(require, exports, module){
 		oBtnWrap.delegate('dd', 'mouseout', function(index, obj){
 			timer = setInterval(fun, 2000);
 		});
+	}
+	
+	/*更新页面的图标位置*/
+	function updatePosition(oUl, oLi, oBtnWrap, pageMinWidth, originLiWidth, oBtnWrapWidth, DISRIGHTWIDTH){
+		var winWidth = $(window).width();
+		if(winWidth > pageMinWidth){
+			if(winWidth < originLiWidth){
+				oUl.width(winWidth);
+				oLi.width(winWidth);
+			} else {
+				oUl.width(originLiWidth);
+				oLi.width(originLiWidth);
+			}
+			oBtnWrap.css('left', winWidth - Math.ceil((winWidth - pageMinWidth)/2) - oBtnWrapWidth- DISRIGHTWIDTH);
+		} else {
+			oUl.width(pageMinWidth);
+			oLi.width(pageMinWidth);
+			oBtnWrap.css('left', pageMinWidth - oBtnWrapWidth - DISRIGHTWIDTH);
+		}
 	}
 	
 	//初始化按钮区域

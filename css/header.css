@@ -29,10 +29,9 @@
 .header-bd .slider {height:340px; background:#f0f0f0;}
 .header-bd .slide-bd {width:100%;margin:0 auto;position:relative;}
 .header-bd .slide-bd, .header-bd .slide-bd .slide-ul {height:100%;overflow:hidden;}
-.header-bd .slide-bd .slide-ul {position: relative;height:341px;overflow:hidden;}
-.header-bd .slide-bd .slide-li {width:1600px;height:341px;}
-.header-bd .slide-bd .slide-li img {width:1600px;height:341px;}
+.header-bd .slide-bd .slide-ul {position: relative;height:341px;overflow:hidden;width:1600px;margin:0 auto;}
+.header-bd .slide-bd .slide-li {width:1600px;height:341px;background-position: center center;background-repeat: no-repeat no-repeat;}
 
-.header-bd .slide-bd .slide-flag {position:absolute;left:1170px;bottom:10px;height:16px;line-height:16px;overflow:hidden;}
+.header-bd .slide-bd .slide-flag {position:absolute;bottom:10px;height:16px;line-height:16px;overflow:hidden;}
 .header-bd .slide-bd .slide-flag dd {display:inline-block;_display:inline;_zoom:1;height:16px;width:16px;margin-right:4px;color:#fff; background:#2f4d95;text-align:center;cursor:pointer;}
 .header-bd .slide-bd .slide-flag dd.active {background:#9c681c;}
